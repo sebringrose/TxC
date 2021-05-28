@@ -27,8 +27,9 @@
             body {
                 font-family: 'Libre Baskerville', serif;
                 color: #4d4946;
-                text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-                box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+                text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .2);
+                box-shadow: inset 0 0 5rem rgba(0, 0, 0, .2);
+                background-color: #f6f6f6;
             }
 
             .cover-container {
@@ -53,22 +54,27 @@
             .btn-secondary,
             .btn-secondary:hover,
             .btn-secondary:focus {
-                color: #333;
+                color: #79ab7d;
                 text-shadow: none; /* Prevent inheritance from `body` */
             }
 
             /* HEADER */
+            header {
+                background-color: #ffffffF5;
+                box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+            }
             .nav-masthead .nav-link {
                 padding: .25rem 0;
                 font-weight: 700;
-                color: rgba(255, 255, 255, .5);
+                color: #79ab7d;
+                text-shadow: none;
                 background-color: transparent;
-                border-bottom: .25rem solid transparent;
+                border-bottom: 2px solid transparent;
             }
 
             .nav-masthead .nav-link:hover,
             .nav-masthead .nav-link:focus {
-                border-bottom-color: rgba(255, 255, 255, .25);
+                border-bottom-color: #79ab7d;
             }
 
             .nav-masthead .nav-link + .nav-link {
@@ -76,35 +82,60 @@
             }
 
             .nav-masthead .active {
-                color: #fff;
-                border-bottom-color: #fff;
+                color: #79ab7d;
+                border-bottom-color: #79ab7d;
+            }
+
+            /* CUSTOM SECTIONS */
+            section {
+                background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
+                background-color: #f1eee4;
+                box-shadow:
+                    0 0 0 2px #79ab7d,
+                    0 0 0 16px white;
+                padding: 2em;
+                margin: 6em 2em;
+            }
+            img {
+                max-width: 100%;
             }
         </style>
     </head>
-    <body class="d-flex h-100 text-center text-white">
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-            <header class="mb-auto">
-                <div>
-                    <h3 class="float-md-start mb-0">Cover</h3>
-                    <nav class="nav nav-masthead justify-content-center float-md-end">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Features</a>
-                        <a class="nav-link" href="#">Contact</a>
-                    </nav>
-                </div>
-            </header>
+    <body class="d-flex text-center text-white min-h-100">
+        <header class="fixed-top p-2">
+            <nav class="nav nav-masthead justify-content-around">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Contact</a>
+            </nav>
+        </header>
 
-            <main class="px-3">
-                <h1>Cover your page.</h1>
-                <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-                <p class="lead">
-                <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
-                </p>
+        <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+            <main class="my-4">
+                <section>
+                    <h1>The Marriage of<br>Thane and Christy</h1>
+                    <h4><em>A union of Isles</em></h4>
+                    <img class="m-2" style="height: 300px" alt="thane&christy" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/thane&christy.jpg">
+                    <!-- <p class="lead">
+                        <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+                    </p> -->
+                </section>
+
+                <section>
+                    <h2>Invitation</h2>
+                    <p>
+                        We are delighted to invite you to our wedding which will be held on two islands:<br>
+                        The official wedding ceremony will take place on Saturday 23rd April, Holy Cross Anglican Church, Nassau, Bahamas.<br>
+                        The festivities will continue with a celebration and ceilidh dance on Thursday 14th July 2022 on the Isle of Jura, Scotland.<br>
+                        You are most welcome to attend either or both events. You can find information about travel and accommodation below.<br>
+                        We kindly ask you to indicate on the RSVP link below which event you would like to attend. Please read up on the event, travel and accommodation first.<br>
+                        Please RSVP by 1st of August 2021.<br>
+                        We would love to see you there,<br>
+                        Thane and Christy<br>
+                        P.S. A formal wedding invitation will follow!<br>
+                    </p>
+                </section>
             </main>
-
-            <footer class="mt-auto text-white-50">
-                <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-            </footer>
         </div>
     </body>
 </html>
