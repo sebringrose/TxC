@@ -56,12 +56,23 @@
             /* Custom default button */
             .btn-secondary {
                 border: 2px solid #CE6C47;
+                background-color: white;
                 color: #CE6C47;
                 box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
                 text-shadow: none;
             }
             .btn-secondary:hover,
             .btn-secondary:focus {
+                color: #CE6C47;
+                box-shadow: inset 0 0 5rem rgba(0, 0, 0, .2);
+            }
+            .dropdown-toggle:hover, .dropdown-toggle:focus  {
+                background-color: white;
+            }
+            .dropdown-item {
+                color: #CE6C47;
+            }
+            .dropdown-item:hover, .dropdown-item:focus {
                 color: #CE6C47;
                 box-shadow: inset 0 0 5rem rgba(0, 0, 0, .2);
             }
@@ -169,7 +180,32 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                 <a class="nav-link" href="#nassau">Nassau</a>
                 <a class="nav-link" href="#jura">Jura</a>
-                <a class="nav-link" href="#gifts">Gifts</a>
+                <!-- <a class="nav-link" href="#gifts">Gifts</a> -->
+                <div 
+                    class="dropdown"
+                    onclick="document.querySelector('#RSVP-list').style.display = 'block'"
+                    onmouseover="document.querySelector('#RSVP-list').style.display = 'block'"
+                    onmouseout="document.querySelector('#RSVP-list').style.display = 'none'"
+                >
+                    <button 
+                        class="btn btn-secondary dropdown-toggle" 
+                        role="button" 
+                        id="dropdownMenuLink" 
+                        data-bs-toggle="dropdown" 
+                        aria-expanded="false"
+                    >
+                        RSVP
+                    </button>
+                  
+                    <ul 
+                        id="RSVP-list" 
+                        class="dropdown-menu" 
+                        aria-labelledby="dropdownMenuLink"
+                    >
+                        <li><a class="dropdown-item" href="/nassau">Nassau</a></li>
+                        <li><a class="dropdown-item" href="/jura">Jura</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
 
@@ -209,7 +245,7 @@
                             <p>
                                 For Nassau travel information and RSVP click here:
                             </p>
-                            <a href="#" class="btn btn-lg btn-secondary fw-bold bg-white m-2">~ Nassau ~</a>
+                            <a href="/nassau" class="btn btn-lg btn-secondary fw-bold bg-white m-2">~ Nassau ~</a>
                         </div>
                         <img alt="nassau2" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/nassau2.png">
                         <img alt="nassau3" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/nassau3.png">
@@ -230,14 +266,14 @@
                             <p>
                                 For Jura travel information and RSVP click here:
                             </p>
-                            <a href="#" class="btn btn-lg btn-secondary fw-bold bg-white m-2">~ Jura ~</a>
+                            <a href="/jura" class="btn btn-lg btn-secondary fw-bold bg-white m-2">~ Jura ~</a>
                         </div>
                         <img alt="jura3" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura3.png">
                     </div>
                 </div>
             </section>
 
-            <section>
+            <!-- <section>
                 <h2 id="gifts">Gifts</h2>
                 <br>
                 <p>
@@ -252,7 +288,7 @@
                 <p>
                     Information about gifts to go here...
                 </p>
-            </section>
+            </section> -->
         </main>
     </body>
 </html>
