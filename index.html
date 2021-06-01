@@ -183,9 +183,14 @@
                 <!-- <a class="nav-link" href="#gifts">Gifts</a> -->
                 <div 
                     class="dropdown"
-                    onclick="document.querySelector('#RSVP-list').style.display = 'block'"
+                    onclick="
+                        let display = document.querySelector('#RSVP-list').style.display
+                        if (display === 'none') return display = 'block'
+                        return display = 'none'
+                    "
                     onmouseover="document.querySelector('#RSVP-list').style.display = 'block'"
                     onmouseout="document.querySelector('#RSVP-list').style.display = 'none'"
+                    onblur="document.querySelector('#RSVP-list').style.display = 'none'"
                 >
                     <button 
                         class="btn btn-secondary dropdown-toggle" 
