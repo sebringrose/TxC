@@ -137,13 +137,11 @@
                 max-width: 100vw;
                 width: 100vw;
                 margin: 0;
-                padding: 2rem 0;
+                padding: 2rem 1rem;
                 box-shadow: none;
             }
             .full-width p {
                 max-width: 500px;
-                padding: 1rem;
-                margin: 0;
             }
             section img {
                 margin: 0.5rem;
@@ -172,8 +170,29 @@
                 text-shadow: none;
                 min-width: 300px;
             }
-
             iframe {
+                max-width: 100%;
+            }
+            .text-box {
+                flex: 1;
+                margin-top: 1rem;
+            }
+            .image-box {
+                height: 400px;
+                flex: 1;
+                margin: 1rem;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .image-box img {
+                margin: 0;
+                width: 50%;
+                height: 33%;
+                object-fit: contain;
+            }
+            .image-box img:first-of-type {
+                width: 100%;
+                height: 66%;
                 max-width: 100%;
             }
         </style>
@@ -182,6 +201,8 @@
         <header class="p-3">
             <nav class="nav nav-masthead align-items-center justify-content-around">
                 <a class="nav-link" aria-current="page" href="/">Home</a>
+                <a class="nav-link" aria-current="page" href="#travel">Travel</a>
+                <a class="nav-link" aria-current="page" href="#accommodation">Accommodation</a>
                 <!-- <a class="nav-link" href="#gifts">Gifts</a> -->
                 <div 
                     class="dropdown"
@@ -209,8 +230,8 @@
                         class="dropdown-menu" 
                         aria-labelledby="dropdownMenuLink"
                     >
-                        <li><a class="dropdown-item" href="/nassau">Nassau</a></li>
-                        <li><a class="dropdown-item" href="/jura">Jura</a></li>
+                        <li><a class="dropdown-item" href="/nassau#rsvp">Nassau</a></li>
+                        <li><a class="dropdown-item" href="/jura#rsvp">Jura</a></li>
                     </ul>
                 </div>
             </nav>
@@ -218,18 +239,109 @@
 
         <main>
             <section class="parchment">
-                <h2 id="travel" class="my-2">Travel to Bahamas</h2>
-                <img class="my-4" alt="bahamas-travel" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/bahamas_travel.png">
+                <h1 class="my-2">Jura</h1>
+                <h4>Travel Information and RSVP</h4>
+                <img class="my-4" alt="young-christy" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/young_christy.png">
                 <p>
-                    There are direct flights with BA from London to Nassau (8 hours), or various connections with other airlines via the USA (e.g. Miami or New York).
+                    <strong>It is important to book the travel at least 3 months in advance.</strong>
                 </p>
-                <img class="my-4" alt="bahamas-travel" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/young_thane.png">
+                <p>
+                    <strong>Because Jura is remote, we recommend that you stay at least 2 nights (or more if you prefer).</strong>
+                </p>
+            </section>
+
+            <section class="full-width">
+                <div class="container d-flex flex-wrap align-items-center justify-content-center">
+                    <h2 style="width: 100%" id="travel">Jura Travel</h2>
+                    <div>
+                        <h4 class="mt-4">By Car</h4>
+                        <p>
+                            Car ferries operate daily from Kennacraig on the mainland (Kintyre Peninsula - about 3 hours’ drive from Glasgow) to Port Askaig on Islay. The ferry ride takes around 2 hours. The connecting ferry from Islay to Feolin on Jura is a short, five minute crossing. Log on to <a href="www.calmac.co.uk" target="_blank">www.calmac.co.uk</a> for details or call 08000 665000.
+                        </p>
+                    
+                    </div>
+                    <img class="my-4" alt="jura-travel-car-ferry" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_travel.png">
+                    
+                    <div>
+                        <h4 class="mt-4">By Foot</h4>
+                        <p>
+                            There is a passenger ferry operating from Tayvallich to Craighouse on Jura. This is the quickest route and takes about 40 minutes. You can park your car at Tayvallich. Log on to: <a href="www.jurapassengerferry.com" target="_blank">www.jurapassengerferry.com</a>.
+                        </p>
+                        <p>
+                            ​There is also a private ferry from Crinan on the mainland which takes half an hour and costs £200 for the boat which takes 12 passengers. <a href="www.venture-west.co.uk" target="_blank">www.venture-west.co.uk</a>.
+                        </p>
+                    </div>
+                    
+                    <img class="my-4" alt="jura-travel-foot-ferry" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_travel2.png">
+                    
+                    <div>
+                        <h4 class="mt-4">By Plane</h4>
+                        <p>
+                            Flybe fly from Glasgow International Airport to Islay. The flight takes half an hour. Log on to: <a href="www.flybe.com" target="_blank">www.flybe.com</a>.
+                        </p>
+                        <p>
+                            ​ From the airport there is a bus service to the ferry terminal or try Carol's Cabs on 01496 302155/07775 782155. Or you can hire a car. For further information log on to: <a href="www.hial.co.uk/islay-airport" target="_blank">www.hial.co.uk/islay-airport</a>.
+                        </p>
+                    </div>
+                    
+                    <img class="my-4" alt="jura-boats" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_travel3.jpg">
+                </div>
+            </section>
+
+            <section class="full-width parchment">
+                <div style="width: 100%">
+                    <h2>Jura Accommodation</h2>
+                    <p style="margin: auto"><strong>Please note that we have pre-booked the whole of the Jura hotel for 2 days (18 rooms for up to 29 guests) and the lodge (nine rooms for 8-10 guests). You can also stay longer at the hotel by private arrangement.</strong></p>
+                </div>
+
+                <div class="container d-flex flex-wrap align-items-center justify-content-center">
+                    <div class="text-box">
+                        <h4 class="mt-4"><a href="https://www.jurahotel.co.uk/" target="_blank">Jura hotel</a></h4>
+                        <p class="lead">2 nights reserved for 29 wedding guests</p>
+                        <p>£85 for a single room and £130 for a double room per night, including breakfast.</p>
+                    </div>
+    
+                    <div class="image-box">
+                        <img alt="jura-hotel" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_accom.png">
+                        <img alt="jura-hotel" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_accom2.png">
+                        <img alt="jura-hotel" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_accom3.png">
+                    </div>
+                </div>
+                    
+                <div class="container d-flex flex-wrap align-items-center justify-content-center">
+                    <div class="text-box">
+                        <h4 class="mt-4"><a href="https://www.ruantallain.co.uk/" target="_blank">Ruantallain Lodge</a></h4>
+                        <p class="lead">5 or 7 nights reserved for 13 wedding guests</p>
+                        <p>£150 per guest per day. Including bed, breakfast, and dinner.</p>
+                    </div>
+    
+                    <div class="image-box">
+                        <img alt="jura-hotel" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_accom4.png">
+                        <img alt="jura-hotel" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_accom5.png">
+                        <img alt="jura-hotel" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_accom6.png">
+                    </div>
+                </div>
             </section>
 
             <section>
-                <h2 id="rsvp">RSVP Bahamas</h2>
+                <h2 id="rsvp">RSVP Jura</h2>
                 <p><strong>(Complete by 1st of August 2021)</strong></p>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScs4Ec5xkN0yq6R8ofDmarP_uzvg86CDJ3mz2Z0v4c3KESz0g/viewform?embedded=true" width="640" height="3253" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <p class="lead">Important Dates and Information:<br>Please read all before doing the RSVP.</p>
+                <table style="text-align: left; margin: 1rem; text-shadow: none;">
+                    <tr>
+                        <td style="min-width: 150px; padding: 15px 0;">August 1</td>
+                        <td>You RSVP including your accommodation preference.</td>
+                    </tr>
+                    <tr>
+                        <td style="min-width: 150px; padding: 15px 0;">August 15</td>
+                        <td>We confirm your reservation.</td>
+                    </tr>
+                    <tr>
+                        <td style="min-width: 150px; padding: 15px 0;">September 1</td>
+                        <td>You send us the deposit for the accommodation. Because this is high season a 50% deposit for the accommodation will be required.</td>
+                    </tr>
+                </table>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSedyhycq2zB3vabqUpvP7UHI71EIFIcKkYgXvEphQ45rvclwg/viewform?embedded=true" width="640" height="3500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </section>
         </main>
     </body>
