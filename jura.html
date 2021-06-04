@@ -141,7 +141,7 @@
                 box-shadow: none;
             }
             .full-width p {
-                max-width: 500px;
+                max-width: 450px;
                 margin: 0 auto;
             }
             section img {
@@ -179,22 +179,17 @@
                 margin-top: 1rem;
             }
             .image-box {
-                height: 400px;
+                height: 200px;
                 flex: 1;
                 margin: 1rem;
                 display: flex;
                 flex-wrap: wrap;
+                overflow: hidden;
             }
             .image-box img {
                 margin: 0;
                 width: 50%;
-                height: 33%;
-                object-fit: contain;
-            }
-            .image-box img:first-of-type {
-                width: 100%;
-                height: 66%;
-                max-width: 100%;
+                object-fit: cover;
             }
         </style>
     </head>
@@ -265,7 +260,7 @@
                     
                     <div>
                         <h4 class="mt-4">By Foot</h4>
-                        <p>
+                        <p class="my-2">
                             There is a passenger ferry operating from Tayvallich to Craighouse on Jura. This is the quickest route and takes about 40 minutes. You can park your car at Tayvallich. Log on to: <a href="https://www.jurapassengerferry.com" target="_blank">www.jurapassengerferry.com</a>.
                         </p>
                         <p>
@@ -277,11 +272,11 @@
                     
                     <div>
                         <h4 class="mt-4">By Plane</h4>
-                        <p>
-                            Flybe fly from Glasgow International Airport to Islay. The flight takes half an hour. Log on to: <a href="https://www.flybe.com" target="_blank">www.flybe.com</a>.
+                        <p class="my-2">
+                            It is also possible to fly from Glasgow International Airport to Islay. The flight takes half an hour.<br>However, this connection has been subject to pandemic disruptions, so check airport website for more details: <a href="www.hial.co.uk/islay-airport" target="_blank">www.hial.co.uk/islay-airport</a>.
                         </p>
                         <p>
-                            ​ From the airport there is a bus service to the ferry terminal or try Carol's Cabs on 01496 302155/07775 782155. Or you can hire a car. For further information log on to: <a href="https://www.hial.co.uk/islay-airport" target="_blank">www.hial.co.uk/islay-airport</a>.
+                            ​ From the airport there is a bus service to the ferry terminal or try Carol's Cabs on 01496 302155/07775 782155. Or you can hire a car.
                         </p>
                     </div>
                     
@@ -295,39 +290,42 @@
                     <p style="margin: auto"><strong>Please note that we have pre-booked the whole of the Jura hotel for 2 days (18 rooms for up to 29 guests) and the lodge (nine rooms for 8-10 guests). You can also stay longer at the hotel by private arrangement.</strong></p>
                 </div>
 
-                <div class="container d-flex flex-wrap align-items-center justify-content-center">
+                <div class="my-4 container d-flex flex-wrap align-items-center justify-content-center">
                     <div class="text-box">
                         <h4 class="mt-4"><a href="https://www.jurahotel.co.uk/" target="_blank">Jura hotel</a></h4>
                         <p class="lead">2 nights reserved for 29 wedding guests</p>
                         <p>£85 for a single room and £130 for a double room per night, including breakfast.</p>
+                        
+                        <div class="image-box">
+                            <img alt="jura-hotel" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_accom2.png">
+                            <img alt="jura-hotel" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_accom3.png">
+                        </div>
                     </div>
     
-                    <div class="image-box">
-                        <img alt="jura-hotel" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_accom.png">
-                        <img alt="jura-hotel" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_accom2.png">
-                        <img alt="jura-hotel" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_accom3.png">
-                    </div>
+                    <img alt="jura-hotel" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_accom.png">
                 </div>
                     
-                <div class="container d-flex flex-wrap align-items-center justify-content-center">
+                <div class="my-4 container d-flex flex-wrap align-items-center justify-content-center">
                     <div class="text-box">
                         <h4 class="mt-4"><a href="https://www.ruantallain.co.uk/" target="_blank">Ruantallain Lodge</a></h4>
                         <p class="lead">5 or 7 nights reserved for 13 wedding guests</p>
                         <p>£150 per guest per day. Including bed, breakfast, and dinner.</p>
+                        
+                        <div class="image-box">
+                            <img alt="jura-hotel" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_accom5.png">
+                            <img alt="jura-hotel" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_accom6.png">
+                        </div>
                     </div>
     
-                    <div class="image-box">
-                        <img alt="jura-hotel" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_accom4.png">
-                        <img alt="jura-hotel" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_accom5.png">
-                        <img alt="jura-hotel" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_accom6.png">
-                    </div>
+                    <img alt="jura-hotel" src="https://raw.githubusercontent.com/sebringrose/TxC/main/assets/jura_accom4.png">
                 </div>
             </section>
 
             <section>
                 <h2 id="rsvp">RSVP Jura</h2>
                 <p><strong>(Complete by 1st of August 2021)</strong></p>
-                <p class="lead">Important Dates and Information:<br>Please read all before doing the RSVP.</p>
+                <h4>Important Dates and Information:</h4>
+                <p>Please read all before doing the RSVP.</p>
                 <table style="text-align: left; margin: 1rem; text-shadow: none;">
                     <tr>
                         <td style="min-width: 150px; padding: 15px 0;">August 1</td>
@@ -335,11 +333,7 @@
                     </tr>
                     <tr>
                         <td style="min-width: 150px; padding: 15px 0;">August 15</td>
-                        <td>We confirm your reservation.</td>
-                    </tr>
-                    <tr>
-                        <td style="min-width: 150px; padding: 15px 0;">September 1</td>
-                        <td>You send us the deposit for the accommodation. Because this is high season a 50% deposit for the accommodation will be required.</td>
+                        <td>You receive the accommodation information pack from us.</td>
                     </tr>
                 </table>
 
